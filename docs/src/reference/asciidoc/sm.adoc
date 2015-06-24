@@ -113,7 +113,9 @@ states.
 Simply mark a particular state as initial state by using `initial()`
 method. There are two methods where one takes extra argument to define
 an initial action. This initial action is good for example initialize
-extended state variables.
+extended state variables. 
+
+(*Hint:* As the statemachine is not fully initialised yet, the initial action can not be used to emit events. This could be done with an entry action for the initial state.) 
 
 [source,java,indent=0]
 ----
